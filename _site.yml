@@ -1,0 +1,22 @@
+name: "tolli-coding"
+title: "Tolli-Coding"
+base_url: https://tolli-coding.netlify.app/
+# google_analytics: "G-7N1FC1R48X"
+collections:
+  posts:
+    disqus: tolli-coding
+    #subscribe: _subscribe.html
+description: |
+  A blog of coding tips
+output_dir: "_site"
+navbar:
+  right:
+    - text: "Home"
+      href: index.html
+    - text: "About"
+      href: about.html
+    #- text: "Resources"
+    #  href: resources.html
+    #- text: "Support"
+    #  href: https://www.Ko-fi.com/codingwithavery
+output: distill::distill_article
