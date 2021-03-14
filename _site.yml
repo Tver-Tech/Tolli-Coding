@@ -9,6 +9,7 @@ description: |
   A blog of coding tips and tutorials.
 output_dir: "_site"
 navbar:
+  search: true
   right:
     - text: "Home"
       href: index.html

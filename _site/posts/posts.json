@@ -1,1 +1,19 @@
-[]
+[
+  {
+    "path": "posts/2021-03-13-git-readme/",
+    "title": "Git Readme",
+    "description": "How to setup a github user readme",
+    "author": [
+      {
+        "name": "Kyle Tolliver",
+        "url": {}
+      }
+    ],
+    "date": "2021-03-11",
+    "categories": [],
+    "contents": "\r\nThis page is a tutorial for how to set up a useful readme for your github user.\r\nStep 0 – Git Setup\r\nInstall R and RStudio\r\nSetup up a Github user\r\nStep 1 – Create Repo\r\nFirst you will have to create a repository with the name of the repo the same as your github username.\r\n\r\nYou can see it’s set to public that is needed for everyone to see the repo. And Initialize the repo with a Readme File.\r\nStep 2 – Create Rmd file\r\nThere are two different ways to create the Rmd file for this project.\r\n2.1 – Method 1\r\nTop left of R Studio there is a white box with a plus in a green circle. Press that then a popup will show up. Go to templates and scroll till you find the github document template. It will open an untitled file. The file heading will say:\r\n`--- \r\ntitle: \"Untitled\" \r\noutput: github_document \r\n---`.\r\nThen Change title to your name first and last. (For example if I was John Doe then the title would be ‘title: “John Doe”’)\r\nSave the file as Readme.Rmd\r\n2.2 Method\r\nTop left of R Studio there is a white box with a plus in a green circle. Press that then a popup will show up. Pick any template for this method it doesn’t matter. It will open an untitled file. The file heading will say:\r\n`--- \r\ntitle: \"Untitled\" \r\noutput: template_document\r\n---`.\r\nRewrite the heading to say:\r\n`--- \r\ntitle: \"First_name Last_name\" \r\noutput: template_document\r\n---`.\r\nSave the file as Readme.Rmd\r\nStep 3 – Setup R Script\r\n\r\n\r\n\r\n",
+    "preview": {},
+    "last_modified": "2021-03-13T22:52:27-07:00",
+    "input_file": "git-readme.utf8.md"
+  }
+]

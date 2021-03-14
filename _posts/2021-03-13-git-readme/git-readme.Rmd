@@ -1,0 +1,73 @@
+---
+title: "Git Readme"
+description: |
+  How to setup a github user readme
+author: Kyle Tolliver
+date: 03-11-2021
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+This page is a tutorial for how to set up a useful readme for your github user.
+
+## Step 0 -- Git Setup
+
+* Install R and RStudio
+* Setup up a Github user
+
+## Step 1 -- Create Repo
+
+First you will have to create a repository with the name of the repo the same as your github username.
+
+![](../../img/new.jpg)
+
+You can see it's set to public that is needed for everyone to see the repo. And Initialize the repo with a Readme File. 
+
+## Step 2 -- Create Rmd file
+
+There are two different ways to create the Rmd file for this project.
+
+### 2.1 -- Method 1
+
+Top left of R Studio there is a white box with a plus in a green circle. Press that then a popup will show up. Go to templates and scroll till you find the github document template. It will open an untitled file. The file heading will say: 
+
+    `--- 
+    title: "Untitled" 
+    output: github_document 
+    ---`.
+
+Then Change title to your name first and last. (For example if I was John Doe then the title would be 'title: "John Doe"')
+
+Save the file as Readme.Rmd
+
+### 2.2 Method
+
+Top left of R Studio there is a white box with a plus in a green circle. Press that then a popup will show up. Pick any template for this method it doesn't matter. It will open an untitled file. The file heading will say:
+
+    `--- 
+    title: "Untitled" 
+    output: template_document
+    ---`.
+    
+Rewrite the heading to say:     
+
+
+    `--- 
+    title: "First_name Last_name" 
+    output: template_document
+    ---`.
+    
+Save the file as Readme.Rmd
+
+## Step 3 -- Source the R Script
+
+You can source a [R script]() that will have functions useful for the readme file. The command used needs to be created in an R chunk. 
+
+
+    ``
+
+
+
+
+    
