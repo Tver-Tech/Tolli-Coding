@@ -13,6 +13,10 @@ This page is a tutorial shows you R functions that assistant in creating a HTML 
 
 All parameters that will be based to the functions need to be strings (`""` or  `''`).
 
+All functions are in a [r script]()
+  
+    source("")
+
 ## Newline and Pagebreak
 
 These are a simple functions.
