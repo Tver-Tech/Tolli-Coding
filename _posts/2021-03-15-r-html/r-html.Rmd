@@ -92,3 +92,11 @@ These functions allow you to add media to you HTML file using R that is in the l
     add_youtube <- function(url, width = 420, height = 345){pander::pander(glue::glue('<iframe src={url} width="{width}" height="{height}"></iframe>'))}
     
 These functions allow you to add video to you HTML file using R that is online such as youtube. (width and height are numbers)
+
+## Pop Up
+
+    alert <- function(msg){pander::pander(glue::glue('"javascript:alert({msg})"'))}
+    
+This function produces an alert from the website. 
+
+Other popup messages will need [javascript](https://www.w3schools.com/js/js_popup.asp).
