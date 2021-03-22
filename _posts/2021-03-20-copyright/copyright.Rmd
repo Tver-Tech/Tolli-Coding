@@ -9,10 +9,8 @@ output:
     self_contained: false
 ---
 
-This page is a tutorial of r function that helps make copyrighting intellectual property on a website. 
-I also walks through the file header needed to license property with *GNU General Public License*.
-
-You need to run this function first `install.packages("lubridate")` or `install.packages("tidyverse")`.
+This page is a tutorial of r function or JavaScript that helps make copyrighting intellectual property on a website. 
+It also walks through the file header needed to license property with *GNU General Public License*.
 
 ## File Header
 
@@ -35,6 +33,8 @@ You need to run this function first `install.packages("lubridate")` or `install.
 At the top of all programming files paste the above section and comment it out. I would suggest using *GNU General Public License* to license your work.
 
 ## The R function
+
+You need to run this function first `install.packages("lubridate")` or `install.packages("tidyverse")`.
 
     copyright <- function(start, name){
       current_year <- lubridate::year(Sys.Date()) 

@@ -2108,8 +2108,7 @@ document.addEventListener('DOMContentLoaded', function() {
 </div>
 
 <div class="d-article">
-<p>This page is a tutorial of r function that helps make copyrighting intellectual property on a website. I also walks through the file header needed to license property with <em>GNU General Public License</em>.</p>
-<p>You need to run this function first <code>install.packages("lubridate")</code> or <code>install.packages("tidyverse")</code>.</p>
+<p>This page is a tutorial of r function or JavaScript that helps make copyrighting intellectual property on a website. It also walks through the file header needed to license property with <em>GNU General Public License</em>.</p>
 <h2 id="file-header">File Header</h2>
 <pre><code>file name 
 Copyright year name 
@@ -2128,6 +2127,7 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see &lt;https://www.gnu.org/licenses/&gt;. </code></pre>
 <p>At the top of all programming files paste the above section and comment it out. I would suggest using <em>GNU General Public License</em> to license your work.</p>
 <h2 id="the-r-function">The R function</h2>
+<p>You need to run this function first <code>install.packages("lubridate")</code> or <code>install.packages("tidyverse")</code>.</p>
 <pre><code>copyright &lt;- function(start, name){
   current_year &lt;- lubridate::year(Sys.Date()) 
   if (current_year != start) {str &lt;- glue::glue(&#39;{start} - {current_year} -- {name}&#39;)}
