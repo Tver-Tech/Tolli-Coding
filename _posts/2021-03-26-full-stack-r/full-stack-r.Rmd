@@ -1,0 +1,179 @@
+---
+title: "Full Stack with R"
+description: |
+  How to do 'Full Stack Web Development' with R
+author: Kyle Tolliver
+date: 03-26-2021
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+```{r setup, include=FALSE}
+pacman::p_load(tidyverse, pacman, knitr, rmarkdown, pander, glue)
+opts_chunk$set(results = 'asis', echo = FALSE, message = FALSE, warning = FALSE) ## Chunk Displays
+```
+
+```{r functions}
+info <- function(url){pander(glue("See [{url}]({url}) for more information"))}
+
+commands <- function(package){
+  pander(glue('
+  Basic Commands
+
+    install.package("{package}")
+    library({package})
+'))
+}
+```
+
+
+This page is a tutorial of what packages and tools could be used to mimic Full Stack Web Development with R. 
+
+## Tidyverse
+
+`r commands("tidyverse")`
+
+Tidyverse is a collection of useful packages for Data Science. I believe its no mater what you use R for.
+
+Packages include:
+
+* ggplot2 - System for declaratively creating graphics, based on The Grammar of Graphics
+* dplyr - Provides a grammar of data manipulation, providing a consistent set of verbs that solve the most common data manipulation challenges
+* tidyr - Provides a set of functions that help you get to tidy data
+  - Tidy data is data with a consistent form: in brief, every variable goes in a column, and every column is a variable
+* readr - Provides a fast and friendly way to read rectangular data (like csv, tsv, and fwf)
+  - Similar packages include:
+    + DBI
+    + haven
+    + httr
+    + readxl
+    + rvest
+    + jsonlite
+    + xml2
+* purrr - Enhances R’s functional programming (FP) toolkit by providing a complete and consistent set of tools for working with functions and vectors
+  - Also includes 
+    + magrittr - Provides the pipe, %>% used throughout the tidyverse
+    + glue - Provides an alternative to paste() that makes it easier to combine data and strings
+* tibble - Modern re-imagining of the data frame, keeping what time has proven to be effective, and throwing out what it has not
+* stringr - Provides a cohesive set of functions designed to make working with strings as easy as possible
+* forcats - Provides a suite of useful tools that solve common problems with factors
+
+`r info("https://www.tidyverse.org/")`
+
+## Pacman
+
+`r commands("pacman")`
+    
+The pacman package is an R package management tool that combines the functionality of base library related functions into intuitively named functions.
+
+```{r pacman}
+pacman <- readr::read_csv('./pacman.csv')
+pander::pander(pacman)
+```
+
+`r info("https://rdocumentation.org/packages/pacman/versions/0.5.1")` 
+
+## Googlesheets4
+
+`r commands("googlesheets4")`
+    
+googlesheets4 will, by default, help you interact with Sheets as an authenticated Google user. 
+
+Use `gs4_deauth()` to indicate there is no need for a token
+
+Similar Packages include:
+
+* googlesheets - Package that googlesheets4 replaces
+* googledrive - Provides a fully-featured interface to the Google Drive API 
+* readxl - Tidyverse package for reading Excel files
+* readr - tidyverse package for reading delimited files
+
+`r info("https://googlesheets4.tidyverse.org/")`
+
+## RMarkdown and Knitr
+
+`r commands("rmarkdown")`
+`r commands("knitr")`
+
+Allows for flexiblity of files and functions when converting to html.
+
+`r info("https://rmarkdown.rstudio.com/, https://www.rdocumentation.org/packages/knitr/versions/1.31")`
+
+## Pander and Glue
+
+### Pander
+
+`r commands("pander")`
+
+Prints an R object in Pandoc's markdown. Used to beautify output in R. 
+
+`r info("https://www.rdocumentation.org/packages/pander/versions/0.6.3")`
+
+### Glue
+
+`r commands("glue")`
+
+Glue offers interpreted string literals that are small, fast, and dependency-free. Glue does this by embedding R expressions in curly braces which are then evaluated and inserted into the argument string.
+
+Basic Functions
+
+    glue()
+    glue_data()
+    glue_sql()
+
+`r info("https://glue.tidyverse.org/")`
+
+### Pander and Glue together
+
+Allow for reuse of print statements. 
+
+For example `info <- function(url){pander(glue("See [{url}]({url}) for more information"))` was used in this page and I just inserted the url into the function call. 
+
+## SQL Packages
+
+SQL - database query language -- a language designed specifically for interacting with a database
+
+* sqldf
+* DBI
+* RODBC
+* dbConnect
+* RSQLite
+* RMySQL
+* RPostgreSQL
+
+These packages allow you to run SQL commands in R.
+
+`r info("https://dept.stat.lsa.umich.edu/~jerrick/courses/stat701/notes/sql.html")`
+
+## Jsonlite and V8
+
+The jsonlite package is a JSON parser/generator optimized for the web. 
+`r info("https://cran.r-project.org/web/packages/jsonlite/vignettes/json-aaquickstart.html")`
+
+V8 is Google’s open source, high performance JavaScript engine. V8 R package allows you implement JS in R. 
+`r info("https://cran.r-project.org/web/packages/V8/vignettes/v8_intro.html")`
+
+## ReactR
+
+reactR provides a set of convenience functions for using React in R with htmlwidget constructor templates and local JavaScript dependencies. The React ecosystem is rich with components that can enhance R web and Shiny apps.
+
+Learn ReactJS at https://www.w3schools.com/react/default.asp
+
+`r info("https://react-r.github.io/reactR/")`
+
+## Shiny
+
+Shiny is an R package that makes it easy to build interactive web apps straight from R. You can host standalone apps on a webpage or embed them in R Markdown documents or build dashboards. 
+
+`r info("https://shiny.rstudio.com/")`
+
+## Other
+
+* leaflet
+* fs
+* curl
+* distill
+* devtools
+* bookdown
+* pagedown

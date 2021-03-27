@@ -7,7 +7,15 @@
     <description>A blog of coding tips and tutorials.
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Sat, 20 Mar 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 26 Mar 2021 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Full Stack with R</title>
+      <dc:creator>Kyle Tolliver</dc:creator>
+      <link>https://tolli-coding.netlify.app/posts/2021-03-26-full-stack-r</link>
+      <description>How to do 'Full Stack Web Development' with R</description>
+      <guid>https://tolli-coding.netlify.app/posts/2021-03-26-full-stack-r</guid>
+      <pubDate>Fri, 26 Mar 2021 00:00:00 +0000</pubDate>
+    </item>
     <item>
       <title>Copyright</title>
       <dc:creator>Kyle Tolliver</dc:creator>
