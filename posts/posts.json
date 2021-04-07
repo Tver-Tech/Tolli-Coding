@@ -1,5 +1,22 @@
 [
   {
+    "path": "posts/2021-04-07-blink-ino/",
+    "title": "Blink ino",
+    "description": "Basic Blink program on Arduino",
+    "author": [
+      {
+        "name": "Kyle Tolliver",
+        "url": {}
+      }
+    ],
+    "date": "2021-04-07",
+    "categories": [],
+    "contents": "\r\nThis tutorial will walk you through how to program the basic Blink Sketch onto an Arduino.\r\nBasic Program structure\r\nEvery Arduino Sketch (program) needs a setup and loop function and is written in C++.\r\nThe setup function runs once when you press reset or power the board. While the loop function runs over and over again forever.\r\nThe loop function can be agnored if the commands just need to be ran once or you put a while(true) loop inside the setup.\r\nIf you perfer working with a main function that can be done. Just have the setup function call main (main()). In the main if anything that needs to occur more than once remember to use loops. Main can be a void or an int with normal C/C++ returns.\r\nBlink with Both Loop and Setup Functions\r\n// the setup function runs once when you press reset or power the board\r\nvoid setup() {\r\n  pinMode(LED_BUILTIN, OUTPUT); // initialize digital pin LED_BUILTIN as an output.\r\n}\r\n\r\n// the loop function runs over and over again forever\r\nvoid loop() {\r\n  digitalWrite(LED_BUILTIN, HIGH);   // turn the LED on (HIGH is the voltage level)\r\n  delay(1000);                       // wait for a second or 1000 milisecond\r\n  digitalWrite(LED_BUILTIN, LOW);    // turn the LED off by making the voltage LOW\r\n  delay(1000);                       // wait for a second or 1000 milisecond\r\n}\r\nBlink with Setup Function\r\n// the setup function runs once when you press reset or power the board\r\nvoid setup() {\r\n  pinMode(LED_BUILTIN, OUTPUT); // initialize digital pin LED_BUILTIN as an output.\r\n\r\n  while(true){ // while true runs over and over again forever\r\n    digitalWrite(LED_BUILTIN, HIGH);   // turn the LED on (HIGH is the voltage level)\r\n    delay(1000);                       // wait for a second\r\n    digitalWrite(LED_BUILTIN, LOW);    // turn the LED off by making the voltage LOW\r\n    delay(1000);                       // wait for a second\r\n  }\r\n}\r\n\r\n\r\nvoid loop() { } // here for structure\r\nBlink with int main\r\n// the setup function runs once when you press reset or power the board\r\nvoid setup() {main();} // call main function\r\n\r\nvoid loop() { } // here for structure\r\n\r\n// the main function is here for as the only function for commands \r\nint main(){ \r\n  // initialize digital pin LED_BUILTIN as an output.\r\n  pinMode(LED_BUILTIN, OUTPUT);\r\n\r\n  while(true){ // while true runs over and over again forever\r\n    digitalWrite(LED_BUILTIN, HIGH);   // turn the LED on (HIGH is the voltage level)\r\n    delay(1000);                       // wait for a second\r\n    digitalWrite(LED_BUILTIN, LOW);    // turn the LED off by making the voltage LOW\r\n    delay(1000);                       // wait for a second\r\n  }\r\n\r\n  return 0; // No errors\r\n}\r\nBlink with void main\r\n// the setup function runs once when you press reset or power the board\r\nvoid setup() {main();} // call main function\r\n\r\nvoid loop() { } // here for structure\r\n\r\n// the main function is here for as the only function for commands \r\nvoid main(){ \r\n  // initialize digital pin LED_BUILTIN as an output.\r\n  pinMode(LED_BUILTIN, OUTPUT);\r\n\r\n  while(true){ // while true runs over and over again forever\r\n    digitalWrite(LED_BUILTIN, HIGH);   // turn the LED on (HIGH is the voltage level)\r\n    delay(1000);                       // wait for a second\r\n    digitalWrite(LED_BUILTIN, LOW);    // turn the LED off by making the voltage LOW\r\n    delay(1000);                       // wait for a second\r\n  }\r\n}\r\n\r\n\r\n\r\n",
+    "preview": {},
+    "last_modified": "2021-04-07T01:46:48-06:00",
+    "input_file": {}
+  },
+  {
     "path": "posts/2021-04-05-arduino-net/",
     "title": "Arduino Net",
     "description": "Ethernet request on Arduino",

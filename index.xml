@@ -7,7 +7,15 @@
     <description>A blog of coding tips and tutorials.
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Mon, 05 Apr 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 07 Apr 2021 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Blink ino</title>
+      <dc:creator>Kyle Tolliver</dc:creator>
+      <link>https://tolli-coding.netlify.app/posts/2021-04-07-blink-ino</link>
+      <description>Basic Blink program on Arduino</description>
+      <guid>https://tolli-coding.netlify.app/posts/2021-04-07-blink-ino</guid>
+      <pubDate>Wed, 07 Apr 2021 00:00:00 +0000</pubDate>
+    </item>
     <item>
       <title>Arduino Net</title>
       <dc:creator>Kyle Tolliver</dc:creator>

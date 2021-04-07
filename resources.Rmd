@@ -1,0 +1,28 @@
+---
+title: "Resources"
+description: |
+  Websites that will be referenced in the blog or have helpful tutorials for programming.
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r setup, include=FALSE}
+source("https://raw.githubusercontent.com/kctolli/kctolli.github.io/master/site_libs/site.R")
+```
+
+```{r eval=FALSE}
+render_site()
+```
+
+## Self Learning
+
+* [SoloLearn](https://www.sololearn.com/learning)
+* [LinkedIn Learning](https://www.linkedin.com/learning/me)
+* [Coursera](https://www.coursera.org/)
+
+## Tutorials
+
+* [W3Schools](https://www.w3schools.com/default.asp)
+* [Arduino Get Started](https://arduinogetstarted.com/arduino-tutorials)
+
+## Other Blogs

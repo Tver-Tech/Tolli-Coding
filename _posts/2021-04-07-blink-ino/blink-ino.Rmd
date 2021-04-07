@@ -1,0 +1,110 @@
+---
+title: "Blink ino"
+description: |
+  Basic Blink program on Arduino
+author: Kyle Tolliver
+date: 04-07-2021
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+```{r setup, include=FALSE}
+pacman::p_load(tidyverse, pacman, knitr, rmarkdown, pander, glue)
+opts_chunk$set(results = 'asis', echo = FALSE, message = FALSE, warning = FALSE) ## Chunk Displays
+```
+
+This tutorial will walk you through how to program the basic Blink Sketch onto an Arduino. 
+
+## Basic Program structure
+
+Every Arduino Sketch (program) needs a setup and loop function and is written in C++. 
+
+The setup function runs once when you press reset or power the board. While the loop function runs over and over again forever.
+
+The loop function can be agnored if the commands just need to be ran once or you put a `while(true)` loop inside the setup.
+
+If you perfer working with a main function that can be done. Just have the setup function call main (`main()`). 
+In the main if anything that needs to occur more than once remember to use loops. Main can be a void or an int with normal C/C++ returns. 
+
+## Blink with Both Loop and Setup Functions
+
+```
+// the setup function runs once when you press reset or power the board
+void setup() {
+  pinMode(LED_BUILTIN, OUTPUT); // initialize digital pin LED_BUILTIN as an output.
+}
+
+// the loop function runs over and over again forever
+void loop() {
+  digitalWrite(LED_BUILTIN, HIGH);   // turn the LED on (HIGH is the voltage level)
+  delay(1000);                       // wait for a second or 1000 milisecond
+  digitalWrite(LED_BUILTIN, LOW);    // turn the LED off by making the voltage LOW
+  delay(1000);                       // wait for a second or 1000 milisecond
+}
+```
+
+## Blink with Setup Function
+
+```
+// the setup function runs once when you press reset or power the board
+void setup() {
+  pinMode(LED_BUILTIN, OUTPUT); // initialize digital pin LED_BUILTIN as an output.
+
+  while(true){ // while true runs over and over again forever
+    digitalWrite(LED_BUILTIN, HIGH);   // turn the LED on (HIGH is the voltage level)
+    delay(1000);                       // wait for a second
+    digitalWrite(LED_BUILTIN, LOW);    // turn the LED off by making the voltage LOW
+    delay(1000);                       // wait for a second
+  }
+}
+
+
+void loop() { } // here for structure
+```
+
+## Blink with int main
+
+```
+// the setup function runs once when you press reset or power the board
+void setup() {main();} // call main function
+
+void loop() { } // here for structure
+
+// the main function is here for as the only function for commands 
+int main(){ 
+  // initialize digital pin LED_BUILTIN as an output.
+  pinMode(LED_BUILTIN, OUTPUT);
+
+  while(true){ // while true runs over and over again forever
+    digitalWrite(LED_BUILTIN, HIGH);   // turn the LED on (HIGH is the voltage level)
+    delay(1000);                       // wait for a second
+    digitalWrite(LED_BUILTIN, LOW);    // turn the LED off by making the voltage LOW
+    delay(1000);                       // wait for a second
+  }
+
+  return 0; // No errors
+}
+```
+
+## Blink with void main
+
+```
+// the setup function runs once when you press reset or power the board
+void setup() {main();} // call main function
+
+void loop() { } // here for structure
+
+// the main function is here for as the only function for commands 
+void main(){ 
+  // initialize digital pin LED_BUILTIN as an output.
+  pinMode(LED_BUILTIN, OUTPUT);
+
+  while(true){ // while true runs over and over again forever
+    digitalWrite(LED_BUILTIN, HIGH);   // turn the LED on (HIGH is the voltage level)
+    delay(1000);                       // wait for a second
+    digitalWrite(LED_BUILTIN, LOW);    // turn the LED off by making the voltage LOW
+    delay(1000);                       // wait for a second
+  }
+}
+```

@@ -6,14 +6,22 @@
       "description": "BYU-Idaho graduate with a Bachelor’s (BS) in Software Engineering. I also earned a minor in Computer Engineering and Data Science. I have over three years of tutoring and teaching experience. I love helping people learn new things and learn new things for myself.\n",
       "author": [],
       "contents": "\r\n\r\n\r\n\r\n\r\nContact Me\r\n kyle@tollivers.org\r\n (805)367-6723\r\n Highland, Utah, USA\r\n linkedin.com/in/kctolli/\r\n kctolli.github.io\r\n github.com/kctolli\r\nSupport Me\r\nVenmo me @Kyle-C-Tolliver\r\n\r\n\r\n\r\nR Bloggers\r\nIf you are interested in learning from other R users, go to r-bloggers.com!\r\n\r\n\r\n\r\n©2021 – Kyle Tolliver\r\n\r\n\r\n\r\n\r\n",
-      "last_modified": "2021-04-05T23:38:11-06:00"
+      "last_modified": "2021-04-07T01:50:00-06:00"
     },
     {
       "path": "index.html",
       "title": "A blog of coding tips and tutorials.",
       "author": [],
       "contents": "\r\n\r\n\r\n\r\n",
-      "last_modified": "2021-04-05T23:38:13-06:00"
+      "last_modified": "2021-04-07T01:50:02-06:00"
+    },
+    {
+      "path": "resources.html",
+      "title": "Resources",
+      "description": "Websites that will be referenced in the blog or have helpful tutorials for programming.\n",
+      "author": [],
+      "contents": "\r\n\r\n\r\n\r\nSelf Learning\r\nSoloLearn\r\nLinkedIn Learning\r\nCoursera\r\nTutorials\r\nW3Schools\r\nArduino Get Started\r\nOther Blogs\r\n\r\n\r\n\r\n",
+      "last_modified": "2021-04-07T01:50:15-06:00"
     }
   ],
   "collections": ["posts/posts.json"]

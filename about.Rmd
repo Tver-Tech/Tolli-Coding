@@ -8,8 +8,6 @@ editor_options:
 
 ```{r setup, include=FALSE}
 source("https://raw.githubusercontent.com/kctolli/kctolli.github.io/master/site_libs/site.R")
-pacman::p_load(tidyverse, pacman, knitr, rmarkdown, pander, glue)
-opts_chunk$set(results = 'asis', echo = FALSE, message = FALSE, warning = FALSE) ## Chunk Displays
 file <- "about"
 ```
 
